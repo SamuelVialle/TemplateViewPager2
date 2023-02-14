@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TableLayout;
 
@@ -37,7 +38,30 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("TWO"));
         tabLayout.addTab(tabLayout.newTab().setText("TRI"));
 
+        tabLayout.getTabAt(0).setIcon(R.drawable.looks_one_24);
+        tabLayout.getTabAt(1).setIcon(R.drawable.looks_two_24);
+        tabLayout.getTabAt(2).setIcon(R.drawable.looks_3_24);
+    }
 
+    /** 4 La gestion des clics sur les tabs **/
+    private void gestionClickTab(){
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager2.setCurrentItem(tab.getPosition());
+                Log.i("TAG", "TabSelected: " + tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
     }
 
 
@@ -49,5 +73,6 @@ public class MainActivity extends AppCompatActivity {
         initUI();
         initViewPager();
         initTabLayout();
+        gestionClickTab();
     }
 }
