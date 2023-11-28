@@ -1,4 +1,6 @@
 # Le View Pager 2
+## Sommaire
+[**Définition**](#1 - Définition)
 ## 1 - Définition
 <div align="justify">
 Le viewPager sert à balayer des vues pour naviguer entre des écrans frères tels que des onglets, 
@@ -46,9 +48,15 @@ Clic droit sur drawable → New → Vector Asset et ajouter les 3 icônes
 #### Ce référer à l'ordre des informations dans le MainActivity
 
 ## 5 - Les cycles de vie des Fragment
+<table><tr>
+<td><img
 Avant de commencer cette étude il est préférable de suavegrader sa version dans Github puis de créer une seconde branche. Pour faire 
 le test de cette façon, il sera possible d'un part de garder ce morceau de code comme un Template puis dans un second temps étudier 
 les cycles de vie dans les fagments dans une branche que l'on pourra supprimer.
+
+Puis dans la nouvelle branche faire les modifications pour ajouter les cycles entre le fragment 1 et le fragment 2 pour informations les mthodes 
+sont les suivantes :
+
 
 
 
