@@ -108,7 +108,9 @@ public class MainActivity extends AppCompatActivity {
         initViewPager(); // 2.1
         initTabLayout(); // 3.1
         gestionClickTab(); // 4.1
-
     }
 
+    /** En 5 il est tout à fait possible d'ajouter les méthodes pour faire une analyse du cycle de vie
+     * Pour agrémenter quelque peu on va ajouter une classe dans la quelle on va ajouter les méthodes récurentes
+     * à la programmation de notre application */
 }
