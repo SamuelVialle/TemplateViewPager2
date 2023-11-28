@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         // Cas n°3 Affiche le texte et les icônes
         tabLayout1.setText("ONE").setIcon(R.drawable.looks_one_24);
         tabLayout2.setText("TWO").setIcon(R.drawable.looks_two_24);
-        tabLayout3.setText("THREE").setIcon(R.drawable.looks_3_24);
+        tabLayout3.setText("THREE").setIcon(R.drawable.looks_three_24);
 
 //        // Noter qu'il est possible de faire référence aux tab par leur index pour ajouter les icônes
 //        tabLayout.getTabAt(0).setIcon(R.drawable.looks_one_24);
@@ -110,7 +110,4 @@ public class MainActivity extends AppCompatActivity {
         gestionClickTab(); // 4.1
     }
 
-    /** En 5 il est tout à fait possible d'ajouter les méthodes pour faire une analyse du cycle de vie
-     * Pour agrémenter quelque peu on va ajouter une classe dans la quelle on va ajouter les méthodes récurentes
-     * à la programmation de notre application */
 }
