@@ -27,6 +27,7 @@ public class FragmentAdapter extends FragmentStateAdapter {
                 return new F03_Fragment();
         }
         return null;
+
     }
 
     /** Cette méthode (ajoutée du fait de l'extension) permet de compter le nombre de tab du tabLayout **/
