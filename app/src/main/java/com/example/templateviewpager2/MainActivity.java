@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         initViewPager(); // 2.1
         initTabLayout(); // 3.1
         gestionClickTab(); // 4.1
+
     }
 
 }
